@@ -28,7 +28,10 @@ import sys, datetime, os.path, gettext
 try:
     from pkg_resources import resource_stream
 except ImportError:
-    resource_stream = None
+    from io import BytesIO
+    from pkgutil import get_data
+    def resource_stream(pkg, path):
+        return BytesIO(get_data(pkg, path))
 
 from pytz.exceptions import AmbiguousTimeError
 from pytz.exceptions import InvalidTimeError
