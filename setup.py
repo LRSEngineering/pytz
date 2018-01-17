@@ -7,7 +7,7 @@ import pytz, sys, os, os.path
 try:
     from setuptools import setup
 except ImportError:
-    from distutils.core import setup
+    from setuptools import setup
 
 me = 'Stuart Bishop'
 memail = 'stuart@stuartbishop.net'
