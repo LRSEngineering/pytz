@@ -10,7 +10,7 @@ on how to use these modules.
 
 # The Olson database is updated several times a year.
 OLSON_VERSION = '2015g'
-VERSION = '2015.7'  # Switching to pip compatible version numbering.
+VERSION = '2015.7-lrs'  # Switching to pip compatible version numbering.
 __version__ = VERSION
 
 OLSEN_VERSION = OLSON_VERSION # Old releases had this misspelling
